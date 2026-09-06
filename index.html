@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Gui Lin — Cloud Data Developer</title>
+<meta name="description" content="Data professional with 4 years in enterprise banking data. Azure, T-SQL, Power BI.">
+<meta property="og:title" content="How Gui Lin — Cloud Data Developer">
+<meta property="og:description" content="Enterprise banking data. Azure, T-SQL, Power BI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;450;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16202a;
+    --paper:#f2f4f5;
+    --card:#ffffff;
+    --muted:#5c6873;
+    --rule:#ccd4d9;
+    --accent:#0f625a;
+    --accent-soft:#e3ecea;
+    --measure:64ch;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .sheet{
+    max-width:780px;
+    margin:0 auto;
+    background:var(--card);
+    padding:32px 22px 56px;
+  }
+
+  a{color:var(--accent);}
+
+  a:focus-visible,
+  .chip:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+
+  /* ---------- masthead ---------- */
+
+  .name{
+    font-family:"IBM Plex Serif",Georgia,serif;
+    font-weight:600;
+    font-size:clamp(2.4rem,10vw,3.4rem);
+    line-height:1.02;
+    letter-spacing:-0.02em;
+    margin:0;
+  }
+
+  .role{
+    margin:10px 0 0;
+    font-size:1.05rem;
+    font-weight:450;
+    color:var(--muted);
+  }
+
+  .accent-rule{
+    height:3px;
+    width:56px;
+    background:var(--accent);
+    margin:20px 0 22px;
+  }
+
+  .contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    padding:0;
+    margin:0 0 26px;
+    list-style:none;
+  }
+
+  .chip{
+    display:inline-block;
+    padding:9px 14px;
+    background:var(--accent-soft);
+    color:var(--accent);
+    border-radius:999px;
+    text-decoration:none;
+    font-size:0.94rem;
+    font-weight:450;
+  }
+
+  .chip:hover{background:var(--accent);color:#fff;}
+
+  .lede{
+    max-width:var(--measure);
+    margin:0 0 30px;
+    font-size:1.06rem;
+  }
+
+  /* ---------- figures ---------- */
+
+  .figures{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:0;
+    border-top:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+    margin:0 0 38px;
+  }
+
+  .figure{
+    padding:15px 0;
+    border-bottom:1px solid var(--rule);
+  }
+
+  .figure:last-child{border-bottom:0;}
+
+  .figure b{
+    display:block;
+    font-family:"IBM Plex Serif",Georgia,serif;
+    font-size:1.7rem;
+    font-weight:500;
+    line-height:1.1;
+    letter-spacing:-0.01em;
+  }
+
+  .figure span{
+    display:block;
+    color:var(--muted);
+    font-size:0.9rem;
+    margin-top:2px;
+  }
+
+  /* ---------- sections ---------- */
+
+  section{margin:0 0 38px;}
+
+  h2{
+    font-size:0.98rem;
+    font-weight:600;
+    letter-spacing:0.01em;
+    margin:0 0 18px;
+    padding-bottom:7px;
+    border-bottom:1px solid var(--rule);
+  }
+
+  .job{margin:0 0 30px;}
+  .job:last-child{margin-bottom:0;}
+
+  .when{
+    color:var(--muted);
+    font-size:0.88rem;
+    margin:0 0 2px;
+  }
+
+  h3{
+    font-size:1.08rem;
+    font-weight:600;
+    margin:0;
+  }
+
+  .org{
+    color:var(--muted);
+    font-size:0.95rem;
+    margin:1px 0 12px;
+  }
+
+  ul.points{
+    margin:0;
+    padding:0;
+    list-style:none;
+    max-width:var(--measure);
+  }
+
+  ul.points li{
+    position:relative;
+    padding-left:16px;
+    margin-bottom:9px;
+  }
+
+  ul.points li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0.62em;
+    width:5px;
+    height:5px;
+    background:var(--rule);
+    border-radius:50%;
+  }
+
+  em{
+    font-style:normal;
+    font-weight:600;
+    box-shadow:inset 0 -0.42em 0 var(--accent-soft);
+  }
+
+  /* ---------- skills ---------- */
+
+  .grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px 34px;
+  }
+
+  .grid h4{
+    margin:0 0 3px;
+    font-size:0.9rem;
+    font-weight:600;
+    color:var(--accent);
+  }
+
+  .grid p{
+    margin:0;
+    font-size:0.97rem;
+    max-width:46ch;
+  }
+
+  ul.plain{
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+
+  ul.plain li{
+    padding:7px 0;
+    border-bottom:1px solid var(--rule);
+    font-size:0.97rem;
+  }
+
+  ul.plain li:last-child{border-bottom:0;}
+
+  .year{color:var(--muted);}
+
+  footer{
+    border-top:1px solid var(--rule);
+    padding-top:16px;
+    color:var(--muted);
+    font-size:0.9rem;
+  }
+
+  /* ---------- wider screens ---------- */
+
+  @media (min-width:620px){
+    .sheet{padding:60px 56px 72px;}
+    .figures{grid-template-columns:repeat(3,1fr);gap:28px;}
+    .figure{border-bottom:0;padding:18px 0;}
+    .grid{grid-template-columns:1fr 1fr;}
+    .job{
+      display:grid;
+      grid-template-columns:118px 1fr;
+      column-gap:26px;
+    }
+    .when{grid-column:1;grid-row:1;margin-top:5px;}
+    .job > :not(.when){grid-column:2;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important;}
+  }
+
+  /* ---------- print ---------- */
+
+  @media print{
+    body{background:#fff;font-size:10.5pt;}
+    .sheet{max-width:none;padding:0;}
+    .chip{background:none;color:var(--ink);padding:0 12px 0 0;}
+    em{box-shadow:none;}
+    .job,section{page-break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+
+  <h1 class="name">How Gui&nbsp;Lin</h1>
+  <p class="role">Cloud data developer, enterprise banking data</p>
+  <div class="accent-rule"></div>
+
+  <ul class="contact">
+    <li><a class="chip" href="mailto:howguilin@gmail.com">howguilin@gmail.com</a></li>
+    <li><a class="chip" href="tel:+6590665471">+65 9066 5471</a></li>
+    <li><a class="chip" href="https://www.linkedin.com/in/howguilin" target="_blank" rel="noopener">LinkedIn</a></li>
+  </ul>
+
+  <p class="lede">
+    Four years in enterprise banking data, now building the database layer
+    behind executive Power BI reporting. Before that I helped move 2PB and
+    24,000 ETL jobs onto Azure. Currently doing a part-time MSc in Data
+    Science at NTU.
+  </p>
+
+  <div class="figures">
+    <div class="figure">
+      <b>2PB</b>
+      <span>Migrated to Azure Data Lake across 420+ source systems</span>
+    </div>
+    <div class="figure">
+      <b>$182K</b>
+      <span>Databricks compute savings, $1.35M projected for FY2027</span>
+    </div>
+    <div class="figure">
+      <b>$150K/mo</b>
+      <span>Cost avoidance from rescheduling long-running archive jobs</span>
+    </div>
+  </div>
+
+  <section>
+    <h2>Experience</h2>
+
+    <article class="job">
+      <p class="when">2024 – Present</p>
+      <h3>IT Support Analyst III, Cloud Data Developer</h3>
+      <p class="org">TD Bank Group, Singapore — Enterprise Data Management</p>
+      <ul class="points">
+        <li>Moved from cloud data production support into a developer role on a
+            strategic enterprise data platform, taking on database change
+            delivery after its MVP 1 release.</li>
+        <li>Design and build tables and views for ongoing database changes,
+            plus the stored procedures that populate them.</li>
+        <li>Write complex, high-performance T-SQL that serves as the primary
+            data source for enterprise Power BI dashboards and executive
+            reporting.</li>
+        <li>Deploy database and pipeline code across environments with GitHub
+            and automated XL Release pipelines, holding version control and
+            deployment standards.</li>
+        <li>Led a Databricks interactive cluster optimisation initiative that
+            realised <em>$182K in savings</em>, with $1.35M projected for
+            FY2027.</li>
+        <li>Analysed archive job execution patterns and compute spend, then
+            drove a rescheduling proposal with FinOps and L3 worth
+            <em>$150K a month</em> in cost avoidance.</li>
+        <li>Built Datadog and Dynatrace monitoring to catch unflagged pipeline
+            failures and close manual monitoring gaps.</li>
+        <li>Investigated production failures with T-SQL and PySpark root cause
+            analysis, and wrote remediation proposals that removed time-zone
+            delay on emergency deployments.</li>
+        <li>Built executive Power BI dashboards giving senior leadership
+            visibility into production health, BAU progress, and outage
+            recovery.</li>
+      </ul>
+    </article>
+
+    <article class="job">
+      <p class="when">2022 – 2024</p>
+      <h3>IT Consultant, deployed to TD Securities</h3>
+      <p class="org">FDM Group, Singapore</p>
+      <ul class="points">
+        <li>Supported the migration of <em>2PB of enterprise data</em> across
+            15,000 tables, 24,000 ETL jobs, 420+ source systems, and 21 lines
+            of business from on-premises to Azure Data Lake Storage.</li>
+        <li>Ran the migration with ADF pipelines, PowerShell, and UNIX
+            commands, then validated end to end against PostgreSQL on-premises
+            and T-SQL in SQL Server to confirm data integrity.</li>
+        <li>Built an ETL and ingestion job inventory wired to automated Azure
+            Databricks healthcheck notebooks, tracking daily execution against
+            SLA targets and replacing manual checks.</li>
+        <li>Investigated post-migration data anomalies on SWAT team
+            initiatives, resolving discrepancies across cloud environments.</li>
+        <li>Managed Level 2 production support in ServiceNow, covering incident
+            triage, request fulfilment, and problem tickets.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section>
+    <h2>Technical skills</h2>
+    <div class="grid">
+      <div>
+        <h4>Languages</h4>
+        <p>SQL, T-SQL, Python, PySpark, PowerShell, UNIX, DAX</p>
+      </div>
+      <div>
+        <h4>Cloud and data platform</h4>
+        <p>Azure Databricks, Azure Data Factory, Azure Synapse Analytics,
+           Azure Data Lake Storage, Microsoft SQL Server, PostgreSQL</p>
+      </div>
+      <div>
+        <h4>Database development</h4>
+        <p>Schema design across tables, views and partitioning, stored
+           procedures, data modelling, query performance tuning, data
+           validation and reconciliation</p>
+      </div>
+      <div>
+        <h4>DevOps and deployment</h4>
+        <p>GitHub, XL Release, CI/CD pipelines, database code versioning,
+           multi-environment deployment</p>
+      </div>
+      <div>
+        <h4>Monitoring and BI</h4>
+        <p>Power BI with DAX and custom query views, Datadog, Dynatrace (DQL),
+           ServiceNow ITSM and custom dashboards</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <article class="job">
+      <p class="when">Aug 2026 – Present</p>
+      <h3>MSc Data Science, part-time</h3>
+      <p class="org">Nanyang Technological University, Singapore</p>
+    </article>
+    <article class="job">
+      <p class="when">2012 – 2016</p>
+      <h3>BEng Mechanical Engineering, Honours</h3>
+      <p class="org">Nanyang Technological University, Singapore.
+         Specialisation in Systems Engineering.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul class="plain">
+      <li>Microsoft Certified: SQL AI Developer Associate, DP-800
+          <span class="year">· 2026</span></li>
+      <li>Microsoft Azure Data Fundamentals, DP-900
+          <span class="year">· 2025</span></li>
+      <li>Microsoft Azure AI Fundamentals, AI-900
+          <span class="year">· 2025</span></li>
+      <li>Microsoft Azure Fundamentals, AZ-900
+          <span class="year">· 2025</span></li>
+      <li>Google Data Analytics Professional Certificate
+          <span class="year">· 2022</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Awards</h2>
+    <p class="lede">
+      Legendary Award in 2026, plus multiple Above &amp; Beyond and Great Work
+      awards for technical leadership, pipeline bug remediation, cost
+      optimisation, and platform improvement. Recognised for cost savings,
+      database governance, and Power BI dashboards that support executive
+      decision-making.
+    </p>
+  </section>
+
+  <section>
+    <h2>Languages and interests</h2>
+    <div class="grid">
+      <div>
+        <h4>Languages</h4>
+        <p>English fluent, Chinese fluent, Korean conversational</p>
+      </div>
+      <div>
+        <h4>Interests</h4>
+        <p>Trading and investments, video production, photography, tennis and
+           table tennis</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Based in Singapore. Reach me at
+      <a href="mailto:howguilin@gmail.com">howguilin@gmail.com</a>
+      or <a href="tel:+6590665471">+65 9066 5471</a>.</p>
+  </footer>
+
+</main>
+</body>
+</html>
